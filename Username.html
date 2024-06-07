@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>Program to enter the username & password as keys to an object through text box and store the username and password in window local storage. An alert box saying “Username registered successfully.” Another Login page , asking for username & password  and check valid user or not.(only  after if-else)</p> -->
+   <h2>Log In</h2>
+   Username*
+    <input type="text" id="use" placeholder="username"><br><br>
+    Password*
+    <input type="password" id="pass" placeholder="password"><br><br>
+    <a href="login.html"><button onclick="check()">Submit</button></a>
+
+    <script>
+ localstorage.getItem("use");
+ localStorage.getItem("password");
+
+ console.log(x,y)
+
+ function check(){
+    let p= document.getElementById("use").value;
+    let q= document.getElementById("pass").value;
+    let x = document.getElementById("use").innerHTML=p;
+    let y = document.getElementById("pass").innerHTML=q;
+    if(x==p && y==q){
+        alert("Successfully login");
+    }
+    else{
+        alert("Incorrect password or username");
+    }
+ }
+</script>
+</body>
+</html>

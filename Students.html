@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="student1">
+    <button onclick="stu()">Click Here</button>
+    <p id="student2"></p>
+   <script>
+    function stu(){
+        let a= document.getElementById("student1").value;
+        let studentlist= ["Mithun","Didheesh","Vishnu","Nandu"]
+
+        for(let i=0; i<3;i++)
+        {
+            if(studentlist[i]==a)
+            {
+                document.getElementById("student2").innerHTML=studentlist[i]
+            }
+            else{
+               // document.getElementById("student2").innerHTML="Not found"
+            }
+        } 
+    }
+   </script>
+</body>
+</html>

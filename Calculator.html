@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<center>
+<table border=1 cellspacing="20" cellpadding="1" bgcolor="black" style="border-radius:10px;" style="font-size 20px;">
+<tr>
+ 
+  <td colspan="4"><input type="text" text color="white"align="right" id="display"  bgcolor=" green"></td>
+</tr>
+  <tr bgcolor="white">
+  <td><input type="button"  value="7" onclick="button(7)"  style=font-size:20px;background-color:white></td>
+  <td><input type="button" value="8" onclick="button(8)"  style=font-size:20px></td>
+  <td><input type="button" value="9" onclick="button(9)" style=font-size:20px></td>
+  <td bgcolor="#5DADE2 "><input type="button" value="÷" style=font-size:20px></td>
+</tr>
+<tr bgcolor="grey" input type="" font color="grey" input type="center">
+  <td><input type="button" value="4" onclick="button(4)" style=font-size:20px></td>
+  <td><input type="button" value="5" onclick="button(5)" style=font-size:20px></td>
+  <td><input type="button" value="6" onclick="button(6)" style=font-size:20px></td>
+  <td bgcolor="#5DADE2"><input type="button" value="×" style=font-size:20px></td>
+</tr>
+<tr bgcolor="grey">
+   <td><input type="button" value="1" onclick="button(1)" style=font-size:20px></td>
+   <td><input type="button" value="2" onclick="button(2)" style=font-size:20px></td>
+   <td><input type="button" value="3" onclick="button(3)" style=font-size:20px></td>
+   <td bgcolor="#5DADE2 "><input type="button" value="-" onclick="button(-)"  style=font-size:20px;background-color:#5DADE2;color=white></td>
+   </tr
+ <tr bgcolor="grey">
+   <td><input type="button" value="0" onclick="button(0)" style=font-size:20px></td>
+   <center><td><input type="button" value="."onclick="button(.)" style=font-size:20px></td></centers>
+   <td ><input type="button"  value="=" onclick="calculate()" style=font-size:20px;background-color:red></td>
+   <td bgcolor="#5DADE2 "><input type="button" value="+" onclick="button('+')"  style=font-size:20px></td>
+   </tr>
+</table>
+</center>
+<script>
+    let expression="";
+    function button(value){
+        expression +=value;
+        document.getElementById("display").value= expression;
+    }
+
+    function calculate(){
+        expression = eval(expression);
+        document.getElementById("display").value= expression;
+    }
+</script>
+</body>
+
+</html>

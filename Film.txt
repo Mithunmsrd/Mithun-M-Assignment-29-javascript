@@ -1,0 +1,15 @@
+function disp(event){
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let film = document.getElementById("film").value;
+    let num = document.getElementById("num").value;
+
+    localStorage.setItem("name",name);
+    localStorage.setItem("film",film);
+    localStorage.setItem("num",num);
+
+    console.log(name,'\n',film,'\n',num);
+    window.location.href = 'Film.html';
+}
+let a="ticket is confirmed";
+document.getElementById("disp").innerHTML= +a;
